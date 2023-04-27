@@ -87,7 +87,7 @@ const SignupLogin = () => {
       <div className="panels-container">
         <div className="panel left-panel">
           <div className="content">
-            <div className="h3">New here ?</div>
+            <div className="side">New here ?</div>
             <p></p>
             <button
               onClick={signUpBtn}
@@ -101,7 +101,7 @@ const SignupLogin = () => {
         </div>
         <div className="panel right-panel">
           <div className="content">
-            <div className="h3">One of us ?</div>
+            <div className="side">One of us ?</div>
             <p></p>
             <button
               onClick={loginBtn}
