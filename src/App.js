@@ -1,0 +1,34 @@
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+
+// import animate on scroll
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+// import components
+import Home from "./components/Home/Home";
+import About from "./components/About/About";
+import Benefits from "./components/Benefits/Benefits";
+//import Courses from "./components/Courses/Courses";
+import CoursesNew from "./components/Courses/CoursesNew";
+import Testimonials from "./components/Testimonials/Testimonials";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Contact/Footer";
+import Landing from "./components/Landing/Landing";
+
+const App = () => {
+  // animate on scroll initialization
+  Aos.init({
+    duration: 800,
+    offset: 0,
+  });
+  return (
+    <div>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+      </Routes>
+    </div>
+  );
+};
+
+export default App;
