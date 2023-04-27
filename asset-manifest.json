@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Bright-Knights/static/css/main.4a395847.css",
+    "main.js": "/Bright-Knights/static/js/main.9c8e1264.js",
+    "static/media/home.png": "/Bright-Knights/static/media/home.4d9b866073a54c848efd.png",
+    "static/media/bg.png": "/Bright-Knights/static/media/bg.ef0a9569ac0190ad93af.png",
+    "static/media/about.png": "/Bright-Knights/static/media/about.b4a5bff7080a6905451b.png",
+    "static/media/benefit2.png": "/Bright-Knights/static/media/benefit2.35029a7bece92dcbe336.png",
+    "static/media/benefit1.png": "/Bright-Knights/static/media/benefit1.9b4ac496b3e78f4c4174.png",
+    "static/media/benefit4.png": "/Bright-Knights/static/media/benefit4.87ca33b5e8eee58b3fee.png",
+    "static/media/benefit3.png": "/Bright-Knights/static/media/benefit3.59d05852be7f2efcff03.png",
+    "static/media/logop3.png": "/Bright-Knights/static/media/logop3.b61a49f3e716f87067ed.png",
+    "static/media/benefit4_bg.png": "/Bright-Knights/static/media/benefit4_bg.da2f2bdbea11c95080a8.png",
+    "static/media/benefit1_bg.png": "/Bright-Knights/static/media/benefit1_bg.4dee57dec6d01ac1b11a.png",
+    "static/media/benefit2_bg.png": "/Bright-Knights/static/media/benefit2_bg.c39835925d68a2ec1b42.png",
+    "index.html": "/Bright-Knights/index.html",
+    "main.4a395847.css.map": "/Bright-Knights/static/css/main.4a395847.css.map",
+    "main.9c8e1264.js.map": "/Bright-Knights/static/js/main.9c8e1264.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a395847.css",
+    "static/js/main.9c8e1264.js"
+  ]
+}
