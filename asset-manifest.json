@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Bright-Knights/static/css/main.ef8d0de1.css",
-    "main.js": "/Bright-Knights/static/js/main.14c9c7cb.js",
+    "main.js": "/Bright-Knights/static/js/main.959e3afc.js",
     "static/media/home.png": "/Bright-Knights/static/media/home.4d9b866073a54c848efd.png",
     "static/media/bg.png": "/Bright-Knights/static/media/bg.ef0a9569ac0190ad93af.png",
     "static/media/about.png": "/Bright-Knights/static/media/about.b4a5bff7080a6905451b.png",
@@ -15,10 +15,10 @@
     "static/media/benefit2_bg.png": "/Bright-Knights/static/media/benefit2_bg.c39835925d68a2ec1b42.png",
     "index.html": "/Bright-Knights/index.html",
     "main.ef8d0de1.css.map": "/Bright-Knights/static/css/main.ef8d0de1.css.map",
-    "main.14c9c7cb.js.map": "/Bright-Knights/static/js/main.14c9c7cb.js.map"
+    "main.959e3afc.js.map": "/Bright-Knights/static/js/main.959e3afc.js.map"
   },
   "entrypoints": [
     "static/css/main.ef8d0de1.css",
-    "static/js/main.14c9c7cb.js"
+    "static/js/main.959e3afc.js"
   ]
 }
