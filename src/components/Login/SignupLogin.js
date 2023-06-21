@@ -23,7 +23,7 @@ const SignupLogin = () => {
       <div className="forms-container">
         <div className="signin-signup">
           <div action="#" className="form sign-in-form">
-            <h2 className="formtitle">Login</h2>
+            <h2 className="formtitle">Loginnn</h2>
             <div className="input-field">
               <FontAwesomeIcon className="profile" icon={faUser} />
               <input type="text" placeholder="Username" />
