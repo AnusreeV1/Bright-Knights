@@ -19,7 +19,7 @@ import About from "../About/About";
 import Benefits from "../Benefits/Benefits";
 //import Courses from "../Courses/Courses";
 import CoursesNew from "../Courses/CoursesNew";
-import Testimonials from "../Testimonials/Testimonials";
+import Coaches from "../Coaches/Coaches";
 import Contact from "../Contact/Contact";
 import Footer from "../Contact/Footer";
 import Navbar from "../Navbar/Navbar";
@@ -45,7 +45,7 @@ const Landing = () => {
         <About />
         <Benefits />
         <CoursesNew />
-        <Testimonials />
+        <Coaches />
         <Contact />
         {/* <Footer /> */}
       </div>

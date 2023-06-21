@@ -1,11 +1,11 @@
 import React from "react";
 
 // import components
-import TestimonialSlider from "./TestimonialSlider";
+import CoachesSlider from "./CoachesSlider";
 
-const Testimonials = () => {
+const Coaches = () => {
   return (
-    <section id="testimonials" className="relative">
+    <section id="coaches" className="relative">
       <div className="container-fluid mx-auto">
         <div
           className="bg-accent-primary min-h-[600px]"
@@ -14,9 +14,9 @@ const Testimonials = () => {
         >
           <div className="flex flex-col justify-center px-2 xl:px-0 h-[800px]">
             <h2 className="h2 text-white text-center mb-[80px]">
-              Testimonials
+              Meet our Coaches
             </h2>
-            <TestimonialSlider />
+            <CoachesSlider />
           </div>
         </div>
       </div>
@@ -24,4 +24,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default Coaches;

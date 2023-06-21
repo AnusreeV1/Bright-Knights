@@ -40,6 +40,13 @@ const Home = () => {
             <h1 className="h2 mb-10" data-aos="fade-down" data-aos-delay="400">
               {title}
             </h1>
+            <h2
+              className="h3card mb-10"
+              data-aos="fade-down"
+              data-aos-delay="400"
+            >
+              {subtitle}
+            </h2>
             <div className="relative space-x-4">
               <button
                 className="float-left btn btn-primary flex items-center gap-x-[20px] group font-bold hover:text-secondary"

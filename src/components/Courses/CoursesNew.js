@@ -3,6 +3,7 @@ import React from "react";
 import { coursesData } from "../../data";
 
 const CoursesNew = () => {
+  const { subtitle, list } = coursesData;
   return (
     // <section className="relative">
     //   <div className="container-fluid mx-auto">
@@ -19,9 +20,17 @@ const CoursesNew = () => {
       <h2 className="h2 text-center" data-aos="fade-down" data-aos-delay="300">
         Courses We Offer
       </h2>
+      <br />
+      <h3
+        className="h3card text-center"
+        data-aos="fade-down"
+        data-aos-delay="300"
+      >
+        {subtitle}
+      </h3>
 
       <div className="mx-auto grid max-w-7xl lg:grid-cols-3 gap-12 lg:gap-8 py-24 px-4 sm:px-6 lg:px-8">
-        {coursesData.map((course) => (
+        {list.map((course) => (
           <div className="flex-1 cursor-pointer transform transition duration-500 hover:scale-110">
             <div
               key={course.title}

@@ -1,7 +1,7 @@
 import React from "react";
 
 // import testimonials data
-import { testimonialsData } from "../../data";
+import { coachesData } from "../../data";
 
 // import swiper react components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,7 +14,7 @@ import "./slider.css";
 // import required modules
 import { Pagination } from "swiper";
 
-const TestimonialSlider = () => {
+const CoachesSlider = () => {
   return (
     <Swiper
       slidesPerView={"auto"}
@@ -26,7 +26,7 @@ const TestimonialSlider = () => {
       modules={[Pagination]}
       className="mySwiper"
     >
-      {testimonialsData.map((slide, index) => {
+      {coachesData.map((slide, index) => {
         // destructure slide
         const { image, message, name, web, delay } = slide;
         return (
@@ -36,7 +36,7 @@ const TestimonialSlider = () => {
             className="bg-white rounded-[20px] border border-accent-primary xl:max-w-[645px] max-h-[330px] pt-[60px] px-[35px] xl:px-[70px] pb-[50px] flex items-start gap-x-[30px] shadow-xl"
           >
             {/* avatar image */}
-            <img src={image} alt="" />
+            <img src={image} width="170px" height="170px" alt="" />
             {/* text */}
             <div>
               <div className="text-lg text-primary font-bold">{name}</div>
@@ -52,4 +52,4 @@ const TestimonialSlider = () => {
   );
 };
 
-export default TestimonialSlider;
+export default CoachesSlider;

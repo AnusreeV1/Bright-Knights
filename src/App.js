@@ -11,7 +11,7 @@ import About from "./components/About/About";
 import Benefits from "./components/Benefits/Benefits";
 //import Courses from "./components/Courses/Courses";
 import CoursesNew from "./components/Courses/CoursesNew";
-import Testimonials from "./components/Testimonials/Testimonials";
+import Coaches from "./components/Coaches/Coaches";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Contact/Footer";
 import Landing from "./components/Landing/Landing";

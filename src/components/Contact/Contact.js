@@ -20,19 +20,20 @@ const Contact = () => {
       data-aos="fade-up"
     >
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row justify-between items-center">
+        <div className="flex flex-col justify-between items-center">
           {/* text */}
-          <div className="flex flex-row py-12 xl:py-24 text-center xl:text-left">
+          <div className="flex flex-row pt-12 text-center xl:text-left">
             <div>
-              <img className="mb-[65px] w-12 h-12" src={logo} alt="" />
+              <img className="w-12 h-12" src={logo} alt="" />
             </div>
-            <h2 className="h2 mb-5" data-aos="fade-up" data-aos-delay="300">
+            <h2 className="h2" data-aos="fade-up" data-aos-delay="300">
               {title}
             </h2>
-            {/* <p className="lead" data-aos="fade-up">
-              {subtitle}
-            </p> */}
           </div>
+          <br />
+          <p className="lead" data-aos="fade-up">
+            {subtitle}
+          </p>
           {/* buttons */}
           <div className="flex flex-col xl:flex-row gap-y-4 gap-x-[30px]">
             {/* <button
@@ -52,6 +53,7 @@ const Contact = () => {
             </button>
           </div>
         </div>
+        <br />
 
         {/* social list */}
         <footer data-aos="fade-up">
@@ -81,14 +83,14 @@ const Contact = () => {
           </div>
         </footer>
       </div>
-      <section className="mt-24 pb-12" data-aos="fade-up">
+      {/* <section className="mt-24 pb-12" data-aos="fade-up">
         <div className="container mx-auto">
           <div className="flex flex-col items-center text-center md:text-left  lg:flex-row justify-between gap-y-8">
-            {/* text */}
+            {text}
             <div className="text-sm font-light italic max-w-[360px]">
               {text}
             </div>
-            {/* icon */}
+            {icon}
             <div className="-order-1 md:order-1">
               <div className="w-[60px] h-[60px] flex items-center justify-center rounded-full bg-accent-primary/20 cursor-pointer group">
                 <div className="text-3xl text-accent-primary group-hover:scale-110 transition-all">
@@ -98,7 +100,8 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      <br />
     </section>
   );
 };

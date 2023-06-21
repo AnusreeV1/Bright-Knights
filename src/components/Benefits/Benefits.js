@@ -21,13 +21,13 @@ const Features = () => {
           >
             {title}
           </h2>
-          {/* <p
+          <p
             className="lead max-w-[584px] mx-auto mb-16 xl:mb-24"
             data-aos="fade-down"
             data-aos-delay="200"
           >
             {subtitle}
-          </p> */}
+          </p>
         </div>
         {/* feature list */}
         <div className="grid grid-cols-1 gap-[30px] xl:grid-cols-2">

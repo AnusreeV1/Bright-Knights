@@ -19,9 +19,11 @@ import Benefit1Img from "../src/assets/img/benefits/benefit1.png";
 import Benefit2Img from "../src/assets/img/benefits/benefit2.png";
 import Benefit3Img from "../src/assets/img/benefits/benefit3.png";
 import Benefit4Img from "../src/assets/img/benefits/benefit4.png";
-import Testi1Img from "../src/assets/img/testimonials/testi1.png";
-import Testi2Img from "../src/assets/img/testimonials/testi2.png";
-import Testi3Img from "../src/assets/img/testimonials/testi3.png";
+import RathishImg from "../src/assets/img/coaches/Rathish.png";
+
+import Testi1Img from "../src/assets/img/coaches/testi1.png";
+import Testi2Img from "../src/assets/img/coaches/testi2.png";
+import Testi3Img from "../src/assets/img/coaches/testi3.png";
 import Logoblack from "../src/assets/img/logoblack.png";
 import Logop3 from "../src/assets/img/logop3.png";
 import Home from "../src/assets/img/home.png";
@@ -37,16 +39,16 @@ export const navigationData = [
   { name: "Why Chess?", link: "#whychess", icon: FaChess },
   { name: "Courses", link: "#courses", icon: FaBook },
   {
-    name: "Testimonials",
-    link: "#testimonials",
+    name: "Coaches",
+    link: "#coaches",
     icon: BsFillFileEarmarkBarGraphFill,
   },
-  { name: "Contact", link: "#contact", icon: BsFillTelephoneFill },
+  // { name: "Contact", link: "#contact", icon: BsFillTelephoneFill },
 ];
 
 export const homeData = {
-  title: ` World's No 1 Chess Curriculum created by Rathish`,
-  subtitle: "",
+  title: ` Checkmate your boredom with our Chess classes!`,
+  subtitle: "Experience hybrid classes (online and offline)",
   book: "Book a free demo",
   login: "Login",
   image: Home,
@@ -63,7 +65,8 @@ export const aboutData = {
 
 export const benefitsData = {
   title: "Why Chess?",
-  subtitle: "",
+  subtitle:
+    "Chess isn't just a game, it's a brain workout! Besides being a fun game, playing chess has many benefits for the brain.",
   list: [
     {
       image: Benefit1Img,
@@ -100,84 +103,89 @@ export const benefitsData = {
   ],
 };
 
-export const coursesData = [
+export const coursesData = {
+  subtitle:
+    "More than just moves, we teach strategy!\nWe'll cover a variety of topics in the class.",
+  list: [
+    {
+      title: "Silver",
+      description: "A beginner level course",
+      price: 10000,
+      currency: "INR",
+      classes: "for 15 classes",
+      features: [
+        "1 on 1",
+        "Live online classes",
+        "1 hr / session",
+        "Analysis sessions",
+        "Review sessions",
+      ],
+      cta: "Book",
+      delay: "300",
+    },
+    {
+      title: "Gold",
+      description: "An intermediate level course",
+      price: 15000,
+      currency: "INR",
+      classes: "for 15 classes",
+      features: [
+        "1 on 1",
+        "Live online classes",
+        "1 hr / session",
+        "Analysis sessions",
+        "Review sessions",
+      ],
+      cta: "Book",
+      delay: "600",
+    },
+    {
+      title: "Platinum",
+      description: "Advanced level course",
+      price: 20000,
+      currency: "INR",
+      classes: "for 20 classes",
+      features: [
+        "1 on 1",
+        "Live online classes",
+        "1 hr / session",
+        "Analysis sessions",
+        "Review sessions",
+      ],
+      cta: "Book",
+      delay: "900",
+    },
+  ],
+};
+
+export const coachesData = [
   {
-    title: "Silver",
-    description: "A beginner level course",
-    price: 10000,
-    currency: "INR",
-    classes: "for 15 classes",
-    features: [
-      "1 on 1",
-      "Live online classes",
-      "1 hr / session",
-      "Analysis sessions",
-      "Review sessions",
-    ],
-    cta: "Book",
+    image: RathishImg,
+    name: "Rathish R",
+    web: "International Chess Player (FIDE)",
+    message: "Contact - 8637442848",
     delay: "300",
   },
-  {
-    title: "Gold",
-    description: "An intermediate level course",
-    price: 15000,
-    currency: "INR",
-    classes: "for 15 classes",
-    features: [
-      "1 on 1",
-      "Live online classes",
-      "1 hr / session",
-      "Analysis sessions",
-      "Review sessions",
-    ],
-    cta: "Book",
-    delay: "600",
-  },
-  {
-    title: "Platinum",
-    description: "Advanced level course",
-    price: 20000,
-    currency: "INR",
-    classes: "for 20 classes",
-    features: [
-      "1 on 1",
-      "Live online classes",
-      "1 hr / session",
-      "Analysis sessions",
-      "Review sessions",
-    ],
-    cta: "Book",
-    delay: "900",
-  },
-];
-
-export const testimonialsData = [
   {
     image: Testi1Img,
-    name: "A",
-    web: "",
-    message: "Some text",
-    delay: "300",
-  },
-  {
-    image: Testi2Img,
-    name: "B",
-    web: "",
-    message: "Some text",
+    name: "Samaksh",
+    web: "International Chess Player (FIDE)",
+    message: "Contact - 7767942420",
     delay: "600",
   },
-  {
-    image: Testi3Img,
-    name: "C",
-    web: "",
-    message: "Some text",
-    delay: "900",
-  },
+  // {
+  //   image: Testi3Img,
+  //   name: "C",
+  //   web: "",
+  //   message: "Some text",
+  //   delay: "900",
+  // },
 ];
 
 export const ctaData = {
   title: "Bright Knights",
-  subtitle: "",
+  subtitle:
+    "Address : A331, Wing 6, Innovative Oak Garden, Bhoganhalli, Bengaluru, Karnataka 560103",
   btnText1: "",
   btnText2: "Book a free Demo",
   logo: Logop3,
@@ -190,21 +198,21 @@ export const footerData = {
   phone: "",
 
   socialList: [
-    {
-      icon: <FaFacebook />,
-      href: "#",
-      delay: "300",
-    },
-    {
-      icon: <FaInstagram />,
-      href: "#",
-      delay: "500",
-    },
-    {
-      icon: <FaLinkedin />,
-      href: "#",
-      delay: "700",
-    },
+    // {
+    //   icon: <FaFacebook />,
+    //   href: "#",
+    //   delay: "300",
+    // },
+    // {
+    //   icon: <FaInstagram />,
+    //   href: "#",
+    //   delay: "500",
+    // },
+    // {
+    //   icon: <FaLinkedin />,
+    //   href: "#",
+    //   delay: "700",
+    // },
     {
       icon: <FaEnvelope />,
       href: "#",
