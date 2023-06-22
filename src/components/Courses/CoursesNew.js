@@ -3,7 +3,7 @@ import React from "react";
 import { coursesData } from "../../data";
 
 const CoursesNew = () => {
-  const { subtitle, list } = coursesData;
+  const { subtitle1, subtitle2, list } = coursesData;
   return (
     // <section className="relative">
     //   <div className="container-fluid mx-auto">
@@ -26,7 +26,9 @@ const CoursesNew = () => {
         data-aos="fade-down"
         data-aos-delay="300"
       >
-        {subtitle}
+        {subtitle1}
+        <br />
+        {subtitle2}
       </h3>
 
       <div className="mx-auto grid max-w-7xl lg:grid-cols-3 gap-12 lg:gap-8 py-24 px-4 sm:px-6 lg:px-8">

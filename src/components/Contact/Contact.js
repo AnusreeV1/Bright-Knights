@@ -34,6 +34,7 @@ const Contact = () => {
           <p className="lead" data-aos="fade-up">
             {subtitle}
           </p>
+          <br />
           {/* buttons */}
           <div className="flex flex-col xl:flex-row gap-y-4 gap-x-[30px]">
             {/* <button
@@ -43,6 +44,7 @@ const Contact = () => {
             >
               {btnText1}
             </button> */}
+
             <button
               className="btn btn-primary flex items-center gap-x-[20px] group"
               data-aos="fade-up"
@@ -64,18 +66,27 @@ const Contact = () => {
             <ul className="flex gap-y-4 gap-x-4 justify-center">
               {socialList.map((item, index) => {
                 return (
-                  <div data-aos="fade-up" data-aos-delay={item.delay}>
-                    <li
-                      className="w-12 h-12 bg-accent-primary_hover flex justify-center items-center rounded-full cursor-pointer hover:bg-accent-secondary transition-all"
-                      key={index}
-                    >
-                      <a
-                        className="text-white text-xl hover:text-white"
-                        href={item.href}
+                  <div className="flex flex-row items-center space-x-2">
+                    <div data-aos="fade-up" data-aos-delay={item.delay}>
+                      <li
+                        className="w-12 h-12 bg-accent-primary_hover flex justify-center items-center rounded-full cursor-pointer hover:bg-accent-secondary transition-all"
+                        key={index}
                       >
-                        {item.icon}
-                      </a>
-                    </li>
+                        <a
+                          className="text-white text-xl hover:text-white"
+                          // href={item.href}
+                        >
+                          {item.icon}
+                        </a>
+                      </li>
+                    </div>
+                    <div
+                      className="lead"
+                      data-aos="fade-up"
+                      data-aos-delay={item.delay}
+                    >
+                      {item.mailid}
+                    </div>
                   </div>
                 );
               })}

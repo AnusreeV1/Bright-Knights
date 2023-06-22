@@ -8,7 +8,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 const Features = () => {
   // destructure features data
-  const { title, subtitle, list } = benefitsData;
+  const { title, subtitle1, subtitle2, list } = benefitsData;
   return (
     <section id="whychess" className="my-[70px] xl:my-[150px]">
       <div className="container mx-auto">
@@ -21,13 +21,17 @@ const Features = () => {
           >
             {title}
           </h2>
-          <p
-            className="lead max-w-[584px] mx-auto mb-16 xl:mb-24"
+
+          <h3
+            className="h3card text-center"
             data-aos="fade-down"
-            data-aos-delay="200"
+            data-aos-delay="300"
           >
-            {subtitle}
-          </p>
+            {subtitle1}
+            <br />
+            {subtitle2}
+          </h3>
+          <br />
         </div>
         {/* feature list */}
         <div className="grid grid-cols-1 gap-[30px] xl:grid-cols-2">

@@ -65,8 +65,9 @@ export const aboutData = {
 
 export const benefitsData = {
   title: "Why Chess?",
-  subtitle:
-    "Chess isn't just a game, it's a brain workout! Besides being a fun game, playing chess has many benefits for the brain.",
+  subtitle1: "Chess isn't just a game, it's a brain workout!",
+  subtitle2:
+    "Besides being a fun game, playing chess has many benefits for the brain.",
   list: [
     {
       image: Benefit1Img,
@@ -104,8 +105,8 @@ export const benefitsData = {
 };
 
 export const coursesData = {
-  subtitle:
-    "More than just moves, we teach strategy!\nWe'll cover a variety of topics in the class.",
+  subtitle1: "More than just moves, we teach strategy!",
+  subtitle2: "We'll cover a variety of topics in the class.",
   list: [
     {
       title: "Silver",
@@ -217,6 +218,7 @@ export const footerData = {
       icon: <FaEnvelope />,
       href: "#",
       delay: "900",
+      mailid: "brightknights05@gmail.com",
     },
   ],
 };

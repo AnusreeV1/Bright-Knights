@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./login.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faLock, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faUser,
+  faLock,
+  faEnvelope,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebookF,
   faTwitter,
@@ -25,38 +30,6 @@ const SignupLogin = () => {
           <div action="#" className="form sign-in-form">
             <h2 className="formtitle">Login</h2>
             <div className="input-field">
-              <FontAwesomeIcon className="profile" icon={faUser} />
-              <input type="text" placeholder="Username" />
-            </div>
-            <div className="input-field">
-              <FontAwesomeIcon className="profile" icon={faLock} />
-              <input type="password" placeholder="Password" />
-            </div>
-            <input type="submit" value="Login" className="modalbtn solid" />
-            <p className="social-text">Or login with social platforms</p>
-            <div className="social-media">
-              <a href="#" className="social-icon">
-                <FontAwesomeIcon icon={faFacebookF} />
-              </a>
-              <a href="#" className="social-icon">
-                <FontAwesomeIcon icon={faTwitter} />
-              </a>
-              <a href="#" className="social-icon">
-                <FontAwesomeIcon icon={faGoogle} />
-              </a>
-              <a href="#" className="social-icon">
-                <FontAwesomeIcon icon={faLinkedin} />
-              </a>
-            </div>
-          </div>
-
-          <div action="#" className="form sign-up-form">
-            <h2 className="formtitle">Sign up</h2>
-            <div className="input-field">
-              <FontAwesomeIcon className="profile" icon={faUser} />
-              <input type="text" placeholder="Username" />
-            </div>
-            <div className="input-field">
               <FontAwesomeIcon className="profile" icon={faEnvelope} />
               <input type="email" placeholder="Email" />
             </div>
@@ -64,8 +37,8 @@ const SignupLogin = () => {
               <FontAwesomeIcon className="profile" icon={faLock} />
               <input type="password" placeholder="Password" />
             </div>
-            <input type="submit" className="modalbtn" value="Sign up" />
-            <p className="social-text">Or Sign up with social platforms</p>
+            <input type="submit" value="Login" className="modalbtn solid" />
+            {/* <p className="social-text">Or login with social platforms</p>
             <div className="social-media">
               <a href="#" className="social-icon">
                 <FontAwesomeIcon icon={faFacebookF} />
@@ -79,7 +52,47 @@ const SignupLogin = () => {
               <a href="#" className="social-icon">
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
+            </div> */}
+          </div>
+
+          <div action="#" className="form sign-up-form">
+            <h2 className="formtitle">Sign up</h2>
+            {/* <div className="input-field">
+              <FontAwesomeIcon className="profile" icon={faUser} />
+              <input type="text" placeholder="Username" />
+            </div> */}
+            <div className="input-field">
+              <FontAwesomeIcon className="profile" icon={faEnvelope} />
+              <input type="email" placeholder="Email" />
             </div>
+            <div className="input-field">
+              <FontAwesomeIcon className="profile" icon={faPhone} />
+              <input type="tel" placeholder="Phone number" />
+            </div>
+            <div className="input-field">
+              <FontAwesomeIcon className="profile" icon={faLock} />
+              <input type="password" placeholder="Password" />
+            </div>
+            <div className="input-field">
+              <FontAwesomeIcon className="profile" icon={faLock} />
+              <input type="password" placeholder="Confirm Password" />
+            </div>
+            <input type="submit" className="modalbtn" value="Sign up" />
+            {/* <p className="social-text">Or Sign up with social platforms</p>
+            <div className="social-media">
+              <a href="#" className="social-icon">
+                <FontAwesomeIcon icon={faFacebookF} />
+              </a>
+              <a href="#" className="social-icon">
+                <FontAwesomeIcon icon={faTwitter} />
+              </a>
+              <a href="#" className="social-icon">
+                <FontAwesomeIcon icon={faGoogle} />
+              </a>
+              <a href="#" className="social-icon">
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+            </div> */}
           </div>
         </div>
       </div>
