@@ -410,3 +410,37 @@ img {
     left: 0%;
     }
   }
+
+
+  .hscroll {
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .hscroll-ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    max-width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    &::-webkit-scrollbar {
+      background: transparent; /* make scrollbar transparent */
+      -webkit-appearance: none;
+      width: 0;
+      height: 0;
+ }
+}
+
+.hscroll-li{
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 0 4px;
+    white-space: nowrap;
+  }
+    
+

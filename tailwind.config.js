@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require("@tailwindcss/typography"), require("daisyui")],
+  plugins: [require("@tailwindcss/typography"), require("daisyui"), require('@themesberg/flowbite/plugin')],
   daisyui: {
     themes: ["light", "dark",],
   },

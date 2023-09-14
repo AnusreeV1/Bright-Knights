@@ -19,7 +19,7 @@ function InternalPage(){
                 <DocumentIcon className="h-48 w-48 inline-block"/>
                 <h1 className="text-5xl mt-2 font-bold">Blank Page</h1>
                 </div>
-            </div>
+            </div>̥
         </div>
     )
 }

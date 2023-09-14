@@ -5,6 +5,12 @@ import { themeChange } from 'theme-change'
 import checkAuth from './app/auth';
 import initializeApp from './app/init';
 
+
+// import routes from './routes/index'
+
+const StudentDetails = lazy(() => import('./pages/protected/StudentDetails'))
+
+
 // Importing pages
 const Layout = lazy(() => import('./containers/Layout'))
 const Login = lazy(() => import('./pages/Login'))
@@ -17,7 +23,7 @@ initializeApp()
 
 
 // Check for login and initialize axios
-const token = checkAuth()
+// const token = checkAuth()
 
 
 function App() {
@@ -37,9 +43,10 @@ function App() {
           <Route path="/register" element={<Register />} />
           
           {/* Place new routes over this */}
+          <Route path="/app/studentdetails" element={<StudentDetails />} />
           <Route path="/app/*" element={<Layout />} />
 
-          <Route path="*" element={<Navigate to={token ? "/app/welcome" : "/login"} replace />}/>
+          {/* <Route path="*" element={<Navigate to={token ? "/app/welcome" : "/login"} replace />}/> */}
 
         </Routes>
       </Router>
