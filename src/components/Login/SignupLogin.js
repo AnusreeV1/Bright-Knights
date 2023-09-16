@@ -20,7 +20,7 @@ import Cookies from 'js-cookie';
 
 const SignupLogin = () => {
   const [signUp, setSignUp] = useState(false);
-  const [credentials, setCredentials] = useState({ email: "", password: "" });9
+  const [credentials, setCredentials] = useState({ email: "", password: "" });
   const signUpBtn = () => {
     setSignUp(true);
   };
