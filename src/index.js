@@ -13,7 +13,6 @@ root.render(
     <Suspense fallback={<SuspenseContent />}>
         <Provider store={store}>
         <BrowserRouter basename={process.env.PUBLIC_URL}>
-
             <App />
           </BrowserRouter>
         </Provider>

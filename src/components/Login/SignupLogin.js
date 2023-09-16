@@ -15,12 +15,44 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { Helmet } from "react-helmet";
 import Axios from "axios";
-import Swal  from "sweetalert2";
+import Swal from "sweetalert2";
 import Cookies from 'js-cookie';
+import { FormControl, InputLabel, Select, MenuItem } from "@mui/material";
+// import { useMinimalSelectStyles } from '@mui-treasury/styles/select/minimal';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 
 const SignupLogin = () => {
   const [signUp, setSignUp] = useState(false);
   const [credentials, setCredentials] = useState({ email: "", password: "" });
+  const [usrType, setUsrType] = useState("parent");
+
+
+  // // const minimalSelectClasses = useMinimalSelectStyles();
+  // const iconComponent = (props) => {
+  //   return (
+  //     <ExpandMoreIcon className={props.className + " " + minimalSelectClasses.icon} />
+  //   )
+  // };
+
+  // moves the menu below the select input
+  // const menuProps = {
+  //   classes: {
+  //     paper: minimalSelectClasses.paper,
+  //     list: minimalSelectClasses.list
+  //   },
+  //   anchorOrigin: {
+  //     vertical: "bottom",
+  //     horizontal: "left"
+  //   },
+  //   transformOrigin: {
+  //     vertical: "top",
+  //     horizontal: "left"
+  //   },
+  //   getContentAnchorEl: null
+  // };
+
+
   const signUpBtn = () => {
     setSignUp(true);
   };
@@ -34,6 +66,7 @@ const SignupLogin = () => {
       let value = e.target.value;
       credentials[field] = value;
       setCredentials(credentials);
+      // console.log(credentials)
     }
   };
 
@@ -41,12 +74,12 @@ const SignupLogin = () => {
     e.preventDefault();
     let baseURL = "http://localhost:5000";
     let url = "http://localhost:5000/api/admin/login"
-    let utype = "admin";
 
     try {
       // console.log(credentials)
+      // console.log(usrType)
       let response = await Axios.post(
-        `${baseURL}/api/${utype}/login`,
+        `${baseURL}/api/${usrType}/login`,
         credentials
       );
 
@@ -57,16 +90,26 @@ const SignupLogin = () => {
           title: "Login successful",
         });
 
-        Cookies.set("token", response.data.token, {expires: 1})
+        Cookies.set("token", response.data.token, { expires: 1 })
         localStorage.setItem("token", response.data.token)
-      } 
+      }
     } catch (err) {
       // console.log(err)
-      Swal.fire({
-        icon: "error",
-        title: "Error",
-        text: err.response.data.message
-      });
+
+      if(!err.response) {
+        Swal.fire({
+          icon: "error",
+          title: "Error",
+          text: "Couldn't reach server"
+        });
+      } else {
+        Swal.fire({
+          icon: "error",
+          title: "Error",
+          text: err.response.data.message
+        });
+      }
+      
     }
   };
 
@@ -89,6 +132,25 @@ const SignupLogin = () => {
               <FontAwesomeIcon className="profile" icon={faLock} />
               <input type="password" name="password" placeholder="Password" onChange={handleChange} />
             </div>
+            <FormControl fullWidth variant="filled" className="bg-white hover:bg-white text-purple-700 rounded-lg" >
+              <InputLabel id="user-select-label">User type</InputLabel>
+              <Select
+                labelId="user-select-label"
+                id="user-select"
+                value={usrType}
+                label="User type"
+                onChange={(e) => setUsrType(e.target.value)}
+                disableUnderline
+                className="bg-white hover:bg-white text-purple-700"
+                // classes={{ root: minimalSelectClasses.select }}
+                // MenuProps={menuProps}
+                // IconComponent={iconComponent}
+              >
+                <MenuItem value={"parent"}>Student</MenuItem>
+                <MenuItem value={"instructor"}>Instructor</MenuItem>
+                <MenuItem value={"admin"}>Admin</MenuItem>
+              </Select>
+            </FormControl>
             <input
               type="submit"
               value="Login"
