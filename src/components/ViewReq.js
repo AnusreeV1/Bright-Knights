@@ -37,17 +37,17 @@ export default function ViewReq() {
 
     let data = [{
         id: "bfst1321",
-        name: "Sanjith",
-        email: "sanjith.sent@gmail.com",
-        phone: "9443559596",
+        name: "FWSFE",
+        email: "sFWEFnt@gmail.com",
+        phone: "943453596",
         age: "21",
         location: "india"
     }, {
         id: "bfst1321",
-        name: "Sanjith",
-        email: "sanjith.sent@gmail.com",
-        phone: "9443559596",
-        age: "21",
+        name: "JDAEOFDJWEF",
+        email: "sadadh.sent@gmail.com",
+        phone: "944353596",
+        age: "23",
         location: "india"
     }]
 
