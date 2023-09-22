@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./login.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useNavigate } from 'react-router-dom';
+
 import {
   faUser,
   faLock,
@@ -23,9 +25,65 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
 const SignupLogin = () => {
+
+  const navigate = useNavigate();
   const [signUp, setSignUp] = useState(false);
   const [credentials, setCredentials] = useState({ email: "", password: "" });
   const [usrType, setUsrType] = useState("parent");
+  const [signUpCred, setSignUpCred] = useState({ name: "", email: "", password: "", phone: "" })
+  
+
+
+  const handleSignUp = async (e) => {
+    e.preventDefault();
+    let baseURL = "http://localhost:5000";
+    // let url = "http://localhost:5000/api/admin/login"
+
+    try {
+      // console.log(credentials)
+      // console.log(usrType)
+      let response = await Axios.post(
+        `${baseURL}/api/${usrType}/signup`,
+        signUpCred
+      );
+
+      // console.log(response)
+      if (response.status == 200) {
+        Swal.fire({
+          icon: "success",
+          title: "Signup successful",
+        });
+
+
+        Cookies.set("token", response.data.token, { expires: 1 })
+        localStorage.setItem("token", response.data.token)
+
+        console.log(localStorage.getItem("token"))
+
+        if (usrType === "admin") {
+          navigate('admin-home')
+        }
+      }
+    } catch (err) {
+      // console.log(err)
+
+      if (!err.response) {
+        Swal.fire({
+          icon: "error",
+          title: "Error",
+          text: "Couldn't reach server"
+        });
+      } else {
+        Swal.fire({
+          icon: "error",
+          title: "Error",
+          text: err.response.data.message
+        });
+      }
+
+    }
+    
+  }
 
 
   // // const minimalSelectClasses = useMinimalSelectStyles();
@@ -67,6 +125,11 @@ const SignupLogin = () => {
       credentials[field] = value;
       setCredentials(credentials);
       // console.log(credentials)
+    } else {
+      let field = e.target.name;
+      let value = e.target.value;
+      signUpCred[field] = value;
+      setSignUpCred(signUpCred);
     }
   };
 
@@ -90,13 +153,20 @@ const SignupLogin = () => {
           title: "Login successful",
         });
 
+
         Cookies.set("token", response.data.token, { expires: 1 })
         localStorage.setItem("token", response.data.token)
+
+        console.log(localStorage.getItem("token"))
+
+        if (usrType === "admin") {
+          navigate('admin-home')
+        }
       }
     } catch (err) {
       // console.log(err)
 
-      if(!err.response) {
+      if (!err.response) {
         Swal.fire({
           icon: "error",
           title: "Error",
@@ -109,7 +179,7 @@ const SignupLogin = () => {
           text: err.response.data.message
         });
       }
-      
+
     }
   };
 
@@ -142,9 +212,9 @@ const SignupLogin = () => {
                 onChange={(e) => setUsrType(e.target.value)}
                 disableUnderline
                 className="bg-white hover:bg-white text-purple-700"
-                // classes={{ root: minimalSelectClasses.select }}
-                // MenuProps={menuProps}
-                // IconComponent={iconComponent}
+              // classes={{ root: minimalSelectClasses.select }}
+              // MenuProps={menuProps}
+              // IconComponent={iconComponent}
               >
                 <MenuItem value={"parent"}>Student</MenuItem>
                 <MenuItem value={"instructor"}>Instructor</MenuItem>
@@ -181,6 +251,10 @@ const SignupLogin = () => {
               <input type="text" placeholder="Username" />
             </div> */}
             <div className="input-field">
+              <FontAwesomeIcon className="profile" icon={faUser} />
+              <input type="name" placeholder="Name" />
+            </div>
+            <div className="input-field">
               <FontAwesomeIcon className="profile" icon={faEnvelope} />
               <input type="email" placeholder="Email" />
             </div>
@@ -196,7 +270,15 @@ const SignupLogin = () => {
               <FontAwesomeIcon className="profile" icon={faLock} />
               <input type="password" placeholder="Confirm Password" />
             </div>
-            <input type="submit" className="modalbtn" value="Sign up" />
+            <div class="inline-flex rounded-md shadow-sm" role="group">
+              <button type="button" class={`px-4 py-2 text-sm font-medium ${usrType === "parent"? 'bg-primary text-white' :  ' text-primary bg-white border '} rounded-l-lg`} onClick={()=>setUsrType("parent")}>
+                Parent
+              </button>
+              <button type="button" class={`px-4 py-2 text-sm font-medium ${usrType !== "parent"? 'bg-primary text-white' :  ' text-primary bg-white border '} rounded-r-lg`} onClick={()=>setUsrType("instructor")}>
+                Instructor
+              </button>
+            </div>
+            <input  type="submit" className="modalbtn mt-10" value="Sign up" onClick={handleSignUp} />
             {/* <p className="social-text">Or Sign up with social platforms</p>
             <div className="social-media">
               <a href="#" className="social-icon">

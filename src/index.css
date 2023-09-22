@@ -23,8 +23,9 @@
   h3,
   h4,
   h5,
-  h6 {
-    @apply font-primary text-primary;
+  h6,
+  span {
+    @apply font-primary text-primary subpixel-antialiased;
   }
   h7 {
     @apply text-tertiary;

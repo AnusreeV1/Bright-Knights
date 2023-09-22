@@ -15,6 +15,7 @@ import Coaches from "./components/Coaches/Coaches";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Contact/Footer";
 import Landing from "./components/Landing/Landing";
+import AdminDashboard from "./pages/AdminDashboard";
 
 const App = () => {
   // animate on scroll initialization
@@ -26,6 +27,8 @@ const App = () => {
     <div>
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route path="/admin-home" element={<AdminDashboard />} />
+
       </Routes>
     </div>
   );

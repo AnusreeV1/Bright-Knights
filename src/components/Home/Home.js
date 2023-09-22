@@ -7,7 +7,7 @@ import { homeData } from "../../data";
 import { BsArrowRight } from "react-icons/bs";
 import Modal from "../Modal/Modal";
 import SignupLogin from "../Login/SignupLogin";
-import Dialog from "./components/MyDialog";
+import MyDialog from "./components/MyDialog";
 
 const Home = () => {
   const { title, subtitle, book, login, image, bgimg, logo } = homeData;
@@ -52,6 +52,9 @@ const Home = () => {
             >
               {subtitle}
             </h2>
+
+          
+            
             <div className="relative space-x-4">
               {/* <button
                 className="float-left btn btn-primary flex items-center gap-x-[20px] group font-bold hover:text-secondary"
@@ -62,8 +65,8 @@ const Home = () => {
                 <BsArrowRight className="text-2xl text-accent-quaternary group-hover:text-primary transition" />
               </button> */}
               {/* {/* <Dialog title={book} content={"hello"}/> */}
-              <Dialog title={book} content={""}/>
-
+             
+              <MyDialog className="w-10" title={"Book a demo"} content={""}/>
               <button
                 className="float-right-0 btn btn-primary mb-8 xl:mb-0 font-bold hover:text-secondary"
                 data-aos="fade-up"

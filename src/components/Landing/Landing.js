@@ -23,12 +23,12 @@ import Coaches from "../Coaches/Coaches";
 import Contact from "../Contact/Contact";
 import Footer from "../Contact/Footer";
 import Navbar from "../Navbar/Navbar";
-
 import "../../Nav.css";
 import SignupLogin from "../Login/SignupLogin";
 
 const Landing = () => {
   // animate on scroll initialization
+
   Aos.init({
     duration: 800,
     offset: 0,
