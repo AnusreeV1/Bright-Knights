@@ -36,6 +36,12 @@ const routes = [
     name: 'Student Details', // name that appear in Sidebar
   },
 
+  {
+    path: '/app/testimonials',
+    icon: <InboxArrowDownIcon className={iconClasses}/>, // icon component
+    name: 'Testimonials', // name that appear in Sidebar
+  },
+
 
   {
     path: '', //no url needed as this has submenu
