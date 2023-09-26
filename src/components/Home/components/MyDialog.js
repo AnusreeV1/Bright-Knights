@@ -68,7 +68,7 @@ export default function MyDialog({ title, content }) {
     }
 
     return (
-        <div>
+        <div className="w-max">
             <button
                 className="float-left btn btn-primary flex items-center gap-x-[20px] group font-bold hover:text-secondary"
                 data-aos="fade-up"
@@ -83,6 +83,7 @@ export default function MyDialog({ title, content }) {
                 onClose={handleClose}
                 aria-labelledby="alert-dialog-title"
                 aria-describedby="alert-dialog-description"
+                className="w-screen"
             >
                 <DialogTitle id="alert-dialog-title">{title}</DialogTitle>
                 <DialogContent>

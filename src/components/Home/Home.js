@@ -53,7 +53,7 @@ const Home = () => {
               {subtitle}
             </h2>
 
-          
+           
             
             <div className="relative space-x-4">
               {/* <button
@@ -66,7 +66,7 @@ const Home = () => {
               </button> */}
               {/* {/* <Dialog title={book} content={"hello"}/> */}
              
-              <MyDialog className="w-10" title={"Book a demo"} content={""}/>
+              <MyDialog className="w-9/12" title={"Book a demo"} content={""}/>
               <button
                 className="float-right-0 btn btn-primary mb-8 xl:mb-0 font-bold hover:text-secondary"
                 data-aos="fade-up"

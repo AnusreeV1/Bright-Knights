@@ -50,7 +50,7 @@ const Contact = () => {
               data-aos="fade-up"
               data-aos-delay="400"
             >
-              {btnText2}
+              Contact Us
               <BsArrowRight className="text-2xl text-accent-quaternary group-hover:text-white transition" />
             </button>
           </div>
