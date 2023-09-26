@@ -24,6 +24,11 @@ import Contact from "../Contact/Contact";
 import Footer from "../Contact/Footer";
 import Navbar from "../Navbar/Navbar";
 import "../../Nav.css";
+
+import { lazy } from 'react'
+
+import Students from "../../pages/protected/Students"
+
 import SignupLogin from "../Login/SignupLogin";
 
 const Landing = () => {
@@ -47,6 +52,7 @@ const Landing = () => {
         <CoursesNew />
         <Coaches />
         <Contact />
+        <Students />
         {/* <Footer /> */}
       </div>
     </section>

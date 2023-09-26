@@ -4,6 +4,7 @@ import {
   FaFacebook,
   FaInstagram,
   FaLinkedin,
+  FaPersonBooth,
 } from "react-icons/fa";
 import { BsChatDotsFill } from "react-icons/bs";
 import { AiFillHome } from "react-icons/ai";
@@ -33,6 +34,8 @@ import Benefit2BgImg from "../src/assets/img/benefits/benefit2_bg.png";
 import Benefit3BgImg from "../src/assets/img/benefits/benefit3_bg.png";
 import Benefit4BgImg from "../src/assets/img/benefits/benefit4_bg.png";
 
+import Students from "./pages/protected/Students"
+
 export const navigationData = [
   { name: "Home", link: "#home", icon: AiFillHome },
   { name: "About Us", link: "#about", icon: FaChessKnight },
@@ -43,6 +46,7 @@ export const navigationData = [
     link: "#coaches",
     icon: BsFillFileEarmarkBarGraphFill,
   },
+  {name: "Profile", link: "" , icon: FaPersonBooth}
   // { name: "Contact", link: "#contact", icon: BsFillTelephoneFill },
 ];
 
@@ -109,49 +113,58 @@ export const coursesData = {
   subtitle2: "We'll cover a variety of topics in the class.",
   list: [
     {
-      title: "Silver",
-      description: "A beginner level course",
+      title: "Beginner ",
+      description: "A Beginner level course",
       price: 10000,
       currency: "INR",
       classes: "for 15 classes",
       features: [
-        "1 on 1",
-        "Live online classes",
-        "1 hr / session",
-        "Analysis sessions",
-        "Review sessions",
+        "Foundational Knowledge",
+        "Interactive Learning",
+        "Tailored Feedback",
+        "PTM AFTER 8 CLASSES",
+       "Summary after each class",
+        "Tournament chess kits" ,
+        "Anytime refund policy",
+        
       ],
       cta: "Book",
       delay: "300",
     },
     {
-      title: "Gold",
+      title: "Intermediate",
       description: "An intermediate level course",
       price: 15000,
       currency: "INR",
       classes: "for 15 classes",
       features: [
-        "1 on 1",
-        "Live online classes",
-        "1 hr / session",
-        "Analysis sessions",
-        "Review sessions",
+        "Advanced Tactics",
+        "Diverse Scenarios", 
+        "Specialized Guidance",
+        "PTM AFTER 8 CLASSES",
+        "Summary after each class",
+        "Tournament chess kits", 
+        "Anytime refund policy",
+
       ],
       cta: "Book",
       delay: "600",
     },
     {
-      title: "Platinum",
+      title: "Advanced",
       description: "Advanced level course",
       price: 20000,
       currency: "INR",
       classes: "for 20 classes",
       features: [
-        "1 on 1",
-        "Live online classes",
-        "1 hr / session",
-        "Analysis sessions",
-        "Review sessions",
+        "Masterclass Sessions",
+        "Competitive Edge",    
+        "Comprehensive Analysis",
+        "PTM AFTER 8 CLASSES",
+        "Summary after each class",
+        "Tournament chess kits", 
+        "Anytime refund policy",
+
       ],
       cta: "Book",
       delay: "900",

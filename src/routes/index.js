@@ -7,9 +7,9 @@ const StudentDetails = lazy(() => import('../pages/protected/StudentDetails'))
 
 const Students = lazy(() => import('../pages/protected/Students'))
 
+const Testimonials = lazy(() => import('../pages/protected/Testimonials') )
 
 const ProfileSettings = lazy(() => import('../pages/protected/ProfileSettings'))
-
 
 const routes = [
   
@@ -32,6 +32,12 @@ const routes = [
     path: '/settings-profile',
     component: ProfileSettings,
   },
+
+  {
+    path: '/testimonials',
+    component: Testimonials,
+  },
+
   
 ]
 
