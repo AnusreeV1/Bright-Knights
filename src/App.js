@@ -17,6 +17,7 @@ import Footer from "./components/Contact/Footer";
 import Landing from "./components/Landing/Landing";
 import AdminDashboard from "./pages/AdminDashboard";
 
+
 const App = () => {
   // animate on scroll initialization
   Aos.init({
@@ -35,3 +36,5 @@ const App = () => {
 };
 
 export default App;
+
+
