@@ -4,11 +4,12 @@ import '../../testimonials.css';
 
 export default function Testimonials() {
   return (
-    <section className="py-12 bg-gray-50 sm:py-16 lg:py-20">
+    
+    <section id="testimonials" data-aos="fade-up" className="py-12 bg-gray-50 sm:py-16 lg:py-20">
   <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
     <div className="flex flex-col items-center">
       <div className="text-center">
-        <h2 className="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj">
+        <h2 className="mt-4 text-3xl font-bold text-primary sm:text-4xl xl:text-5xl font-pj">
           Our happy clients say about us
         </h2>
       </div>
@@ -28,7 +29,7 @@ export default function Testimonials() {
             className="w-full h-full max-w-5xl mx-auto rounded-3xl opacity-30 blur-lg filter"
             style={{
               background:
-                "linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)"
+                "linear-gradient(90deg, #E5B8F4 -0.55%, #E5B8F4 22.86%, #E5B8F4 48.36%, #E5B8F4 73.33%, #E5B8F4 99.34%)"
             }}
           />
         </div>

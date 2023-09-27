@@ -2,7 +2,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     fontFamily: {
-      primary: "Open Sans",
+      primary: "",
       secondary: "Lato",
     },
     container: {

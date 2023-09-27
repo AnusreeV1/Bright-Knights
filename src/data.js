@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 import { BsChatDotsFill } from "react-icons/bs";
 import { AiFillHome } from "react-icons/ai";
-import { FaChessKnight, FaChessBoard, FaBook, FaChess, FaAddressBook } from "react-icons/fa";
+import { FaChessKnight, FaChessBoard, FaBook, FaChess, FaAddressBook, FaAward } from "react-icons/fa";
 import {
   BsFillFileEarmarkBarGraphFill,
   BsFillTelephoneFill,
@@ -47,6 +47,7 @@ export const navigationData = [
     link: "#coaches",
     icon: BsFillFileEarmarkBarGraphFill,
   },
+  {name: "Testimonials", link: "#testimonials" , icon: FaAward},
   {name: "Contact", link: "#contact" , icon: FaAddressBook}
   // { name: "Contact", link: "#contact", icon: BsFillTelephoneFill },
 ];
@@ -198,7 +199,7 @@ export const coachesData = [
 ];
 
 export const ctaData = {
-  title: "Bright Knights",
+  title: "Young Visionaries Chess Club",
   subtitle:
     "Address : A331, Wing 6, Innovative Oak Garden, Bhoganhalli, Bengaluru, Karnataka 560103",
   btnText1: "",

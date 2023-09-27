@@ -24,6 +24,7 @@ import Contact from "../Contact/Contact";
 import Footer from "../Contact/Footer";
 import Navbar from "../Navbar/Navbar";
 import "../../Nav.css";
+import Testimonials from "../../features/testimonials/index"
 
 import { lazy } from 'react'
 
@@ -51,6 +52,7 @@ const Landing = () => {
         <About />
         <CoursesNew />
         <Coaches />
+        <Testimonials />
         <Contact />
         {/* <Students /> */}
         {/* <Footer /> */}
