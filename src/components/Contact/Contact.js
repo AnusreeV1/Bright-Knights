@@ -32,7 +32,7 @@ const Contact = () => {
           </div>
           <br />
           <p className="lead" data-aos="fade-up">
-            {subtitle}
+            {/* {subtitle} */}
           </p>
           <br />
           {/* buttons */}
@@ -45,14 +45,17 @@ const Contact = () => {
               {btnText1}
             </button> */}
 
-            <button
-              className="btn btn-primary flex items-center gap-x-[20px] group"
+            <a
+              href="https://wa.me/919344701084?text=Hey%20Young%20Visionaries%20Chess%20Club.%20I%27m%20interested%20to%20avail%20your%20services."
+              className="btn btn-primary flex items-center gap-x-[20px] group hover:text-white"
               data-aos="fade-up"
               data-aos-delay="400"
             >
               Contact Us
               <BsArrowRight className="text-2xl text-accent-quaternary group-hover:text-white transition" />
-            </button>
+            </a>
+
+            {/* <ReactWhatsapp number="1-212-736-5000" message="Hello World!!!" /> */}
           </div>
         </div>
         <br />
@@ -74,19 +77,20 @@ const Contact = () => {
                       >
                         <a
                           className="text-white text-xl hover:text-white"
-                          // href={item.href}
+                        // href={item.href}
                         >
                           {item.icon}
                         </a>
                       </li>
                     </div>
-                    <div
+                    <a
                       className="lead"
                       data-aos="fade-up"
                       data-aos-delay={item.delay}
+                      href="mailto:brightknights05@gmail.com?subject=Service%20Enquiry%20-%20%5BYour%20Name%5D&body=Hey%20Young%20Visionaries%20Chess%20Club%0A%0AI'm%20interested%20in%20availing%20your%20services."
                     >
                       {item.mailid}
-                    </div>
+                    </a>
                   </div>
                 );
               })}

@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className="col">
           <li className="logo">
             <HashLink to="#home" className="nav-link-first rounded-xl">
-              <div className="link-text logo-text">Bright Knights</div>
+              <div className="link-text logo-text">Young Visionaries</div>
               <svg
                 aria-hidden="true"
                 focusable="false"

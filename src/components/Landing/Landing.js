@@ -47,12 +47,12 @@ const Landing = () => {
 
       <div className="right">
         <Home />
-        <About />
         <Benefits />
+        <About />
         <CoursesNew />
         <Coaches />
         <Contact />
-        <Students />
+        {/* <Students /> */}
         {/* <Footer /> */}
       </div>
     </section>

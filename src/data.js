@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 import { BsChatDotsFill } from "react-icons/bs";
 import { AiFillHome } from "react-icons/ai";
-import { FaChessKnight, FaChessBoard, FaBook, FaChess } from "react-icons/fa";
+import { FaChessKnight, FaChessBoard, FaBook, FaChess, FaAddressBook } from "react-icons/fa";
 import {
   BsFillFileEarmarkBarGraphFill,
   BsFillTelephoneFill,
@@ -38,15 +38,16 @@ import Students from "./pages/protected/Students"
 
 export const navigationData = [
   { name: "Home", link: "#home", icon: AiFillHome },
-  { name: "About Us", link: "#about", icon: FaChessKnight },
   { name: "Why Chess?", link: "#whychess", icon: FaChess },
+  { name: "About Us", link: "#about", icon: FaChessKnight },
+ 
   { name: "Courses", link: "#courses", icon: FaBook },
   {
     name: "Coaches",
     link: "#coaches",
     icon: BsFillFileEarmarkBarGraphFill,
   },
-  {name: "Profile", link: "" , icon: FaPersonBooth}
+  {name: "Contact", link: "#contact" , icon: FaAddressBook}
   // { name: "Contact", link: "#contact", icon: BsFillTelephoneFill },
 ];
 
