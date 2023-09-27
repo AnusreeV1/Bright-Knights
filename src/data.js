@@ -234,6 +234,7 @@ export const footerData = {
       href: "#",
       delay: "900",
       mailid: "brightknights05@gmail.com",
+      wappnum: "919344701084"
     },
   ],
 };
